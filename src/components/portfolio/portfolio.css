@@ -1,0 +1,18 @@
+/* Portfolio.css */
+
+.grow-on-hover {
+  transition: transform 0.3s ease-in-out;
+}
+
+.grow-on-hover:hover {
+  transform: scale(1.1);
+}
+
+.card {
+  overflow: hidden; /* Ensure that the scaled image stays within its container */
+}
+.grow-on-hover {
+  height: 300px;
+  width: 200px;
+  cursor: pointer;
+}

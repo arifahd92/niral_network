@@ -10,6 +10,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import Portfolio from "./components/portfolio/Portfolio";
 import Header from "./components/user/Header";
+import Detail from "./components/portfolio/Detail";
 
 export default function App() {
   const [user, setUser] = useState("");
@@ -25,6 +26,10 @@ export default function App() {
         <Route
           path="/portfolio/:user"
           element={<Protect Component={Portfolio} />}
+        />
+        <Route
+          path="/portfolio/:user/:id"
+          element={<Protect Component={Detail} />}
         />
         <Route path="/*" element={<ErrorPage />} />
       </Routes>
