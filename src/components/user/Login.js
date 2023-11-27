@@ -25,7 +25,7 @@ export default function Login() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData);
-    const user = JSON.parse(localStorage.getItem("user")) || [];
+    const user = JSON.parse(localStorage.getItem("userInfo")) || [];
     if (user.length === 0) {
       alert("invalid credentials");
       return;
